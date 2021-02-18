@@ -1,12 +1,16 @@
-List<Ingredient> ingredients = Arrays.asList(
-                new Ingredient("FLTO", "Flour Tortilla", Type.WRAP),
-                new Ingredient("COTO", "Corn Tortilla", Type.WRAP),
-                new Ingredient("GRBF", "Ground Beef", Type.PROTEIN),
-                new Ingredient("CARN", "Carnitas", Type.PROTEIN),
-                new Ingredient("TMTO", "Diced Tomatoes", Type.VEGGIES),
-                new Ingredient("LETC", "Lettuce", Type.VEGGIES),
-                new Ingredient("CHED", "Cheddar", Type.CHEESE),
-                new Ingredient("JACK", "Monterrey Jack", Type.CHEESE),
-                new Ingredient("SLSA", "Salsa", Type.SAUCE),
-                new Ingredient("SRCR", "Sour Cream", Type.SAUCE)
-        );
+delete from Taco_Order_Tacos;
+delete from Taco_Ingredients;
+delete from Taco;
+delete from Taco_Order;
+delete from Ingredient;
+
+insert into Ingredient (id, name, type) values ('FLTO', 'Flour Tortilla', 'WRAP');
+insert into Ingredient (id, name, type) values ('COTO', 'Corn Tortilla', 'WRAP');
+insert into Ingredient (id, name, type) values ('GRBF', 'Ground Beef', 'PROTEIN');
+insert into Ingredient (id, name, type) values ('CARN', 'Carnitas', 'PROTEIN');
+insert into Ingredient (id, name, type) values ('TMTO', 'Diced Tomatoes', 'VEGGIES');
+insert into Ingredient (id, name, type) values ('LETC', 'Lettuce', 'VEGGIES');
+insert into Ingredient (id, name, type) values ('CHED', 'Cheddar', 'CHEESE');
+insert into Ingredient (id, name, type) values ('JACK', 'Monterrey Jack', 'CHEESE');
+insert into Ingredient (id, name, type) values ('SLSA', 'Salsa', 'SAUCE');
+insert into Ingredient (id, name, type) values ('SRCR', 'Sour Cream', 'SAUCE');
