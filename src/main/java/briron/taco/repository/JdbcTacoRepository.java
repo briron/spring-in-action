@@ -44,7 +44,7 @@ public class JdbcTacoRepository implements TacoRepository {
         KeyHolder keyHolder = new GeneratedKeyHolder();
         jdbcTemplate.update(connection -> {
             PreparedStatement ps = connection.prepareStatement(
-                    "insert into Taco (name, cratedAt) values (?, ?)",
+                    "insert into Taco (name, createdAt) values (?, ?)",
                     Statement.RETURN_GENERATED_KEYS);
             ps.setString(1, taco.getName());
             ps.setTimestamp(2, new Timestamp(taco.getCreatedAt().getTime()));
