@@ -30,6 +30,11 @@ dependencies {
 	implementation 'org.springframework.boot:spring-boot-starter-security'
 	implementation 'org.springframework.security:spring-security-test'
 
+	// ldap
+	implementation 'org.springframework.boot:spring-boot-starter-data-ldap'
+	implementation 'org.springframework.ldap:spring-ldap-core'
+	implementation 'org.springframework.security:spring-security-ldap'
+
 	// lombok
 	implementation 'org.projectlombok:lombok:1.18.16'
     implementation 'org.springframework.boot:spring-boot-starter-validation'
